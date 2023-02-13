@@ -1,0 +1,20 @@
+grade=input("Enter the grade: ")
+if grade=="A" or grade=="B":
+    sal=int(input("Salary: "))    
+    if sal<=0 :
+        print("Enter a valid number")
+    elif sal<10000:
+        print("Salary=",sal)
+        print("Bonus=", sal*0.02)
+        print("Total=",(sal*0.02)+sal)
+    elif grade=="A" and sal>=10000:
+        print("Salary=",sal)
+        print("Bonus=", sal*0.05)
+        print("Total=",(sal*0.05)+sal)
+    elif grade=="B" and sal>=10000:
+        print("Salary=",sal)
+        print("Bonus=", sal*0.1)
+        print("Total=",(sal*0.1)+sal) 
+    
+else:
+   print("Enter a valid grade")
